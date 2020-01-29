@@ -23,9 +23,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="offset-md-2 col-md-8 col-sm-12">
-				<h1 class="intro">L’expansion du nouveau coronavirus dans le monde</h1>
+				<h1 class="intro">L’expansion du nouveau coronavirus</h1>
 
-				<!-- <p class="lead">En Chine, 2886</p> -->
+				<p class="lead">Le 2019-nCov a causé 132 décès et plus de 6000 infections confirmées dans le monde, selon les chiffres compilés par l’université Johns-Hopkins. Il dépasse désormais le nombre de cas enregistré lors de l'épidémie de Sras (Syndrome respiratoire aigu sévère) en 2002-2003</p>
 				<!-- <p>En Chine, le nombre de victimes de l'épidémie de pneumonie virale a bondi à 80 et 2744 cas ont été confirmés dans le pays. Les nouveaux décès ont été enregistrés dans la province de Hubei, épicentre de la contagion. -->
 
 				<!-- <p class="credits">Infographie: Paul Ronga</p> -->
@@ -48,7 +48,7 @@
 					</div>
 					<div class="col-lg-12">
 						<div class="source">
-							Sources: compilation du <a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">CSSE de l’Université Johns-Hopkins</a>, mise à jour le 28 janvier à 2h30 et basée sur des données de <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports">l’OMS</a>, du <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC</a>, de la <a href="http://www.nhc.gov.cn/yjb/s3578/new_list.shtml">NHC</a> et de <a href="https://3g.dxy.cn/newh5/view/pneumonia?scene=2">DXY.cn</a></div>
+							Sources: compilation du <a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">CSSE de l’Université Johns-Hopkins</a>, mise à jour le 29 janvier à 5h00 (heure suisse) et basée sur des données de <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports">l’OMS</a>, du <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC</a>, de la <a href="http://www.nhc.gov.cn/yjb/s3578/new_list.shtml">NHC</a> et de <a href="https://3g.dxy.cn/newh5/view/pneumonia?scene=2">DXY.cn</a></div>
 					</div>
 				</div>
 
@@ -74,13 +74,15 @@
 					<div class="offset-md-2 col-md-8 col-sm-12">
 
 
-									<p><span class="big">4474</span> infections confirmées dans le monde</p>
-									<p><span class="big">107</span> décès</p>
-									<p><span class="big">63</span> guérisons</p>
+									<p><span class="big">6057</span> infections confirmées dans le monde</p>
+									<p><span class="big">132</span> décès</p>
+									<p><span class="big">110</span> guérisons</p>
 
-									<p>D’après les données <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">compilées par l’université John Hopkins</a> à 2h30 (heure Suisse).</p>
+									<p>D’après des données <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">compilées par l’université John Hopkins</a> et actualisées le 29 janvier à 5h00 (heure suisse).</p>
 
-									<p><b>Lire aussi: </b> <a href="https://www.letemps.ch/monde/continu-coronavirus-107-morts">Notre suivi en direct de ce mardi</a></p>
+									<!-- <p class="credits">Infographie: Paul Ronga + TODO code dipso sur github</p> -->
+
+									<p><b>Lire aussi: </b> <a href="https://www.letemps.ch/monde/continu-nombre-personnes-contaminees-coronavirus-2020-depasse-sras">Notre suivi en direct de ce mercredi</a></p>
 								</div>
 				</div>
 
@@ -101,12 +103,12 @@
 		<script src="lib/d3-tip.js"></script>
 		<script src="lib/queue.min.js"></script>
 		<script src="js/chart-custom.js"></script>
-		<script src="js/map.js?8"></script>
+		<script src="js/map.js?10"></script>
 		<script>
 
 		$(document).ready(function() {
 			// time-serie charts
-			d3.csv("data/linegraphs.csv?2", function(e, data){
+			d3.csv("data/linegraphs.csv?4", function(e, data){
 				var china = [];
 				var other = [];
 
