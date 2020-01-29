@@ -6,6 +6,7 @@
 <head>
 
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800" rel="stylesheet">
@@ -48,7 +49,7 @@
 							Sources: compilation du <a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">CSSE de l’Université Johns-Hopkins</a>,
 							mise à jour le 29 janvier à 5h00 (heure suisse) et basée sur des données
 							de <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports">l’OMS</a>,
-							du <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC</a>, 
+							du <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC</a>,
 							de la <a href="http://www.nhc.gov.cn/yjb/s3578/new_list.shtml">NHC</a>
 							et de <a href="https://3g.dxy.cn/newh5/view/pneumonia?scene=2">DXY.cn</a></div>
 					</div>
@@ -86,7 +87,7 @@
 
 									<p><b>Lire aussi: </b> <a href="https://www.letemps.ch/monde/continu-nombre-personnes-contaminees-coronavirus-2020-depasse-sras">Notre suivi en direct de ce mercredi</a></p>
 
-									<p class="credits">Infographie: Paul Ronga, code <a target="_blank" href="https://github.com/labsletemps/coronavirus-world-map">disponible sur GitHub</a></p>
+									<p class="credits">Infographie: Paul Ronga, code <a target="_blank" href="https://github.com/labsletemps/coronavirus-world-map">disponible sur GitHub</a> <a class="warn_error"></a></p>
 						</div>
 				</div>
 
@@ -105,7 +106,7 @@
 		<script src="lib/d3-geo-projection.v2.min.js"></script>
 		<script src="lib/d3-tip.js"></script>
 		<script src="lib/queue.min.js"></script>
-		<script src="js/chart-custom.js?10"></script>
+		<script src="js/chart-custom.js?12"></script>
 		<script src="js/map.js?10"></script>
 		<script>
 
@@ -127,7 +128,7 @@
 					suffix: ' cas',
 					ylabel: 'Cas confirmés',
 					dateParse: "%Y-%m-%d",
-					dateFormat: "%m.%d.%m.%Y"
+					dateFormat: "%d.%m."
 				});
 
 				const chartOther = new Chart({
@@ -136,7 +137,7 @@
 					suffix: ' cas',
 					ylabel: 'Cas confirmés',
 					dateParse: "%Y-%m-%d",
-					dateFormat: "%m.%d.%m.%Y",
+					dateFormat: "%d.%m.",
 				});
 
 				var resizeTimeout;
@@ -150,6 +151,17 @@
 				d3.select(window).on('resize', resizeEvent );
 
 			});
+
+			if (window.fetch) {
+				fetch('meta.json')
+					.then(function(response) { return response.json(); })
+					.then(function(data) {
+						console.log(data);
+						$('.warn_error').text('Signaler une erreur');
+						$('<span>| </span>').insertBefore('.warn_error')
+						$('.warn_error').attr('href', 'mailto:' + data['contact'] + '@letemps.ch');
+					});
+				}
 		});
 
 		</script>

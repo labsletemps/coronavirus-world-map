@@ -5,7 +5,7 @@ with open( 'index.html.twig' , 'r') as f:
 
     reg = r'\{\{.*?\}\}'
 
-    notwig = content.replace("{{ block('head_brand') }}", '<meta charset="utf-8" />')
+    notwig = content.replace("{{ block('head_brand') }}", '<meta charset="utf-8" />\n	<meta name="viewport" content="width=device-width, initial-scale=1" />')
     notwig = re.sub(reg, '', notwig)
     notwig = notwig.replace('{#', '<!--').replace('#}', '-->')
     notwig = notwig.replace('{%', '<!-- [twig template]').replace('%}', '-->')

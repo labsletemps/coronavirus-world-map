@@ -9,7 +9,7 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css?3" />
 	<link rel="stylesheet" type="text/css" href="css/map.css?3" />
 
@@ -26,9 +26,6 @@
 				<h1 class="intro">L’expansion du nouveau coronavirus</h1>
 
 				<p class="lead">Le 2019-nCov a causé 132 décès et plus de 6000 infections confirmées dans le monde, selon les chiffres compilés par l’université Johns-Hopkins. Il dépasse désormais le nombre de cas enregistré lors de l'épidémie de Sras (Syndrome respiratoire aigu sévère) en 2002-2003</p>
-				<!-- <p>En Chine, le nombre de victimes de l'épidémie de pneumonie virale a bondi à 80 et 2744 cas ont été confirmés dans le pays. Les nouveaux décès ont été enregistrés dans la province de Hubei, épicentre de la contagion. -->
-
-				<!-- <p class="credits">Infographie: Paul Ronga</p> -->
 
 				</div>
 			</div>
@@ -48,7 +45,12 @@
 					</div>
 					<div class="col-lg-12">
 						<div class="source">
-							Sources: compilation du <a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">CSSE de l’Université Johns-Hopkins</a>, mise à jour le 29 janvier à 5h00 (heure suisse) et basée sur des données de <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports">l’OMS</a>, du <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC</a>, de la <a href="http://www.nhc.gov.cn/yjb/s3578/new_list.shtml">NHC</a> et de <a href="https://3g.dxy.cn/newh5/view/pneumonia?scene=2">DXY.cn</a></div>
+							Sources: compilation du <a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">CSSE de l’Université Johns-Hopkins</a>,
+							mise à jour le 29 janvier à 5h00 (heure suisse) et basée sur des données
+							de <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports">l’OMS</a>,
+							du <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC</a>,
+							de la <a href="http://www.nhc.gov.cn/yjb/s3578/new_list.shtml">NHC</a>
+							et de <a href="https://3g.dxy.cn/newh5/view/pneumonia?scene=2">DXY.cn</a></div>
 					</div>
 				</div>
 
@@ -83,7 +85,9 @@
 									<!-- <p class="credits">Infographie: Paul Ronga + TODO code dipso sur github</p> -->
 
 									<p><b>Lire aussi: </b> <a href="https://www.letemps.ch/monde/continu-nombre-personnes-contaminees-coronavirus-2020-depasse-sras">Notre suivi en direct de ce mercredi</a></p>
-								</div>
+
+									<p class="credits">Infographie: Paul Ronga, code <a target="_blank" href="https://github.com/labsletemps/coronavirus-world-map">disponible sur GitHub</a> <a class="warn_error"></a></p>
+						</div>
 				</div>
 
 		</div>
@@ -91,10 +95,9 @@
 		{{ block('footer_brand') }}
 
 
-		<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="lib/jquery-3.4.1.slim.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+		<script src="lib/bootstrap.min.js"></script>
 
 		<!-- pies -->
 		<script src="lib/d3.v4.min.js"></script>
@@ -102,7 +105,7 @@
 		<script src="lib/d3-geo-projection.v2.min.js"></script>
 		<script src="lib/d3-tip.js"></script>
 		<script src="lib/queue.min.js"></script>
-		<script src="js/chart-custom.js"></script>
+		<script src="js/chart-custom.js?12"></script>
 		<script src="js/map.js?10"></script>
 		<script>
 
@@ -124,7 +127,7 @@
 					suffix: ' cas',
 					ylabel: 'Cas confirmés',
 					dateParse: "%Y-%m-%d",
-					dateFormat: "%m.%d.%m.%Y"
+					dateFormat: "%d.%m."
 				});
 
 				const chartOther = new Chart({
@@ -133,7 +136,7 @@
 					suffix: ' cas',
 					ylabel: 'Cas confirmés',
 					dateParse: "%Y-%m-%d",
-					dateFormat: "%m.%d.%m.%Y",
+					dateFormat: "%d.%m.",
 				});
 
 				var resizeTimeout;
@@ -147,6 +150,17 @@
 				d3.select(window).on('resize', resizeEvent );
 
 			});
+
+			if (window.fetch) {
+				fetch('meta.json')
+					.then(function(response) { return response.json(); })
+					.then(function(data) {
+						console.log(data);
+						$('.warn_error').text('Signaler une erreur');
+						$('<span>| </span>').insertBefore('.warn_error')
+						$('.warn_error').attr('href', 'mailto:' + data['contact'] + '@letemps.ch');
+					});
+				}
 		});
 
 		</script>
