@@ -7,7 +7,7 @@ class Chart {
         this.suffix = opts.suffix ? opts.suffix : '';
         this.ylabel = opts.ylabel ? opts.ylabel : '';
         this.serie = opts.serie ? opts.serie : '';
-        this.dateFormat = opts.dateFormat ? opts.dateFormat : "%m/%Y";
+        this.dateFormat = "%d.%m."; //opts.dateFormat ? opts.dateFormat : "%m/%Y";
         this.dateParse = opts.dateParse ? opts.dateParse : "%b-%y";
         this.valuelabelsBottom = opts.valuelabelsBottom ? opts.valuelabelsBottom : false;
         this.kind = opts.kind ? opts.kind : 'line';
@@ -110,7 +110,7 @@ class Chart {
 
         let xAxis = d3.axisBottom()
            .scale(this.xScale)
-           .ticks( this.width > 400 ? 2 : 0) // mobile?
+           .ticks( this.width > 400 ? d3.timeDay.every(1) : d3.timeDay.every(2)) // mobile
            .tickFormat(d3.timeFormat(this.dateFormat));
 
 
