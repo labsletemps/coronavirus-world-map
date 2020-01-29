@@ -3,3 +3,11 @@
 .LSOverride
 index.html.twig
 remove_templating.py
+
+composer.json
+composer.lock
+composer.phar
+embed_code.html
+fonts/
+templates/
+vendor/
