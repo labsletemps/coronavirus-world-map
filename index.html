@@ -1,0 +1,159 @@
+<!-- [twig template] use '_blocks.html.twig' -->
+
+<!DOCTYPE HTML>
+
+<html>
+<head>
+
+	
+
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css?3" />
+	<link rel="stylesheet" type="text/css" href="css/map.css?3" />
+
+</head>
+
+<body>
+
+	
+
+	<!-- Emplacement pour le contenu principal -->
+	<div class="container">
+		<div class="row">
+			<div class="offset-md-2 col-md-8 col-sm-12">
+				<h1 class="intro">L’expansion du nouveau coronavirus</h1>
+
+				<p class="lead">Le 2019-nCov a causé 132 décès et plus de 6000 infections confirmées dans le monde, selon les chiffres compilés par l’université Johns-Hopkins. Il dépasse désormais le nombre de cas enregistré lors de l'épidémie de Sras (Syndrome respiratoire aigu sévère) en 2002-2003</p>
+
+				</div>
+			</div>
+				<div class="row">
+
+					<div class="col-lg-9 col-sm-12">
+						<div id="map" class="map">
+							<div class="tooltip"></div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-sm-12">
+						<div class="map-details">
+							<h4></h4>
+							<p>Cliquer/toucher un cercle pour plus d’informations.</p>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="source">
+							Sources: compilation du <a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">CSSE de l’Université Johns-Hopkins</a>,
+							mise à jour le 29 janvier à 5h00 (heure suisse) et basée sur des données
+							de <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports">l’OMS</a>,
+							du <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC</a>, 
+							de la <a href="http://www.nhc.gov.cn/yjb/s3578/new_list.shtml">NHC</a>
+							et de <a href="https://3g.dxy.cn/newh5/view/pneumonia?scene=2">DXY.cn</a></div>
+					</div>
+				</div>
+
+				<div class="chart-background margin-top margin-bottom">
+					<div class="row four-graphs">
+
+						<div class="col-lg-6 col-md-12">
+							<h5>Infections en Chine</h5>
+							<div class="chart chart-china"></div>
+							<!-- <div class="source">Source: <a target="_blank" href="https://donnees.banquemondiale.org/indicateur/NY.GDP.MKTP.CD?end=2018&start=2008">Banque mondiale</a></div> -->
+						</div>
+
+						<div class="col-lg-6 col-md-12">
+							<h5>Ailleurs dans le monde</h5>
+							<div class="chart chart-other"></div>
+							<!-- <div class="source">Source: Ilostat via la <a target="_blank" href="https://data.worldbank.org/indicator/SL.UEM.TOTL.NE.ZS?end=2018&locations=US&start=2008">Banque Mondiale</a></div> -->
+
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="offset-md-2 col-md-8 col-sm-12">
+
+
+									<p><span class="big">6057</span> infections confirmées dans le monde</p>
+									<p><span class="big">132</span> décès</p>
+									<p><span class="big">110</span> guérisons</p>
+
+									<p>D’après des données <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">compilées par l’université John Hopkins</a> et actualisées le 29 janvier à 5h00 (heure suisse).</p>
+
+									<!-- <p class="credits">Infographie: Paul Ronga + TODO code dipso sur github</p> -->
+
+									<p><b>Lire aussi: </b> <a href="https://www.letemps.ch/monde/continu-nombre-personnes-contaminees-coronavirus-2020-depasse-sras">Notre suivi en direct de ce mercredi</a></p>
+
+									<p class="credits">Infographie: Paul Ronga, code <a target="_blank" href="https://github.com/labsletemps/coronavirus-world-map">disponible sur GitHub</a></p>
+						</div>
+				</div>
+
+		</div>
+
+		
+
+
+		<script src="lib/jquery-3.4.1.slim.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+		<script src="lib/bootstrap.min.js"></script>
+
+		<!-- pies -->
+		<script src="lib/d3.v4.min.js"></script>
+		<script src="lib/topojson.v2.min.js"></script>
+		<script src="lib/d3-geo-projection.v2.min.js"></script>
+		<script src="lib/d3-tip.js"></script>
+		<script src="lib/queue.min.js"></script>
+		<script src="js/chart-custom.js?10"></script>
+		<script src="js/map.js?10"></script>
+		<script>
+
+		$(document).ready(function() {
+			// time-serie charts
+			d3.csv("data/linegraphs.csv?4", function(e, data){
+				var china = [];
+				var other = [];
+
+				data.forEach(function(d) {
+					d.date = new Date(d.timestamp);
+					china.push([d.date, +d.China]);
+					other.push([d.date, +d.Other]);
+				});
+
+				const chartChina = new Chart({
+					element: document.querySelector('.chart-china'),
+					data: china,
+					suffix: ' cas',
+					ylabel: 'Cas confirmés',
+					dateParse: "%Y-%m-%d",
+					dateFormat: "%m.%d.%m.%Y"
+				});
+
+				const chartOther = new Chart({
+					element: document.querySelector('.chart-other'),
+					data: other,
+					suffix: ' cas',
+					ylabel: 'Cas confirmés',
+					dateParse: "%Y-%m-%d",
+					dateFormat: "%m.%d.%m.%Y",
+				});
+
+				var resizeTimeout;
+				function resizeEvent(){
+					clearTimeout(resizeTimeout);
+					resizeTimeout = setTimeout(function(){
+						chartChina.draw();
+						chartOther.draw();
+					}, 200);
+				}
+				d3.select(window).on('resize', resizeEvent );
+
+			});
+		});
+
+		</script>
+
+
+	</body>
+	</html>
