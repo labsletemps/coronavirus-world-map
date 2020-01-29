@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/map.css?2" />
+	<style>
+	body{
+		padding: 0;
+		margin: 0;
+	}
+	</style>
+</head>
+
+<body>
+
+
+	<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-lg-9 col-sm-12">
+
+						<a target="_blank" href="https://labs.letemps.ch/interactive/2020/carte-coronavirus-monde/">
+							<div id="map" class="map">
+							<div class="tooltip"></div>
+						</div>
+					</a>
+					</div>
+
+					<div class="col-lg-3 col-sm-12">
+						<div class="map-details">
+							<h4></h4>
+							<p>Cliquer/toucher un cercle pour plus d’informations.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-12">
+					<div class="source">
+						Sources: compilation du <a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">CSSE de l’Université Johns-Hopkins</a>, mise à jour le 29 janvier à 5h00 et basée sur des données de <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports">l’OMS</a>, du <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC</a>, de la <a href="http://www.nhc.gov.cn/yjb/s3578/new_list.shtml">NHC</a> et de <a href="https://3g.dxy.cn/newh5/view/pneumonia?scene=2">DXY.cn</a></div>
+				</div>
+
+		</div>
+
+		<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<!-- pies -->
+		<script src="lib/d3.v4.min.js"></script>
+		<script src="lib/topojson.v2.min.js"></script>
+		<script src="lib/d3-geo-projection.v2.min.js"></script>
+		<script src="lib/d3-legend.min.js"></script>
+		<script src="lib/d3-tip.js"></script>
+		<script src="js/colorbrewer.js"></script>
+		<script src="lib/queue.min.js"></script>
+		<script src="js/map.js?10"></script>
+		<script>
+
+		$(document).ready(function() {
+			// TODO: evolution chart here
+		});
+
+		</script>
+
+
+	</body>
+	</html>
