@@ -1,53 +1,57 @@
 Province/State,Country/Region,Last Update,Confirmed,Deaths,Recovered,lat,lng,long_name,short_name,n,country
-Hubei,Mainland China,2020-01-28 23:00:00,3554,125,80,30.7378118,112.2384017,Hubei,Hubei,3554,Chine
-Zhejiang,Mainland China,2020-01-28 23:00:00,296,0,3,29.1416432,119.7889248,Zhejiang,Zhejiang,296,Chine
-Guangdong,Mainland China,2020-01-28 23:00:00,241,0,5,23.3790333,113.7632828,Guangdong,Guangdong,241,Chine
-Hunan,Mainland China,2020-01-28 23:00:00,221,0,0,26.895816,112.623731,Dongfeng North Road,Dongfeng N Rd,221,Chine
-Henan,Mainland China,2020-01-28 23:00:00,206,2,1,34.2904302,113.3823545,Henan,Henan,206,Chine
-Anhui,Mainland China,2020-01-28 23:00:00,152,0,0,30.6006773,117.9249002,Anhui,Anhui,152,Chine
-Chongqing,Mainland China,2020-01-28 23:00:00,147,0,1,29.4315861,106.912251,Chongqing,Chongqing,147,Chine
-Shandong,Mainland China,2020-01-28 23:00:00,121,0,0,35.8939566,117.9249002,Shandong,Shandong,121,Chine
-Jiangxi,Mainland China,2020-01-28 23:00:00,109,0,3,27.0874564,114.9042208,Jiangxi,Jiangxi,109,Chine
-Sichuan,Mainland China,2020-01-28 23:00:00,108,0,0,30.26380319999999,102.8054753,Sichuan,Sichuan,108,Chine
-Jiangsu,Mainland China,2020-01-28 23:00:00,99,0,1,33.1401715,119.7889248,Jiangsu,Jiangsu,99,Chine
-Beijing,Mainland China,2020-01-28 23:00:00,91,1,4,39.90419989999999,116.4073963,Beijing,Beijing,91,Chine
-Fujian,Mainland China,2020-01-28 23:00:00,82,0,0,24.505977,118.126884,Xingshan Road,Xingshan Rd,82,Chine
-Shanghai,Mainland China,2020-01-28 23:00:00,80,1,4,31.237137,121.487881,111,111,80,Chine
-Guangxi,Mainland China,2020-01-28 23:00:00,58,0,2,23.7247599,108.8076195,Guangxi,Guangxi,58,Chine
-Shaanxi,Mainland China,2020-01-28 23:00:00,56,0,0,34.265033,108.946197,Lianhu Qu,Lianhu Qu,56,Chine
-Hebei,Mainland China,2020-01-28 23:00:00,48,1,0,37.8956594,114.9042208,Hebei,Hebei,48,Chine
-Yunnan,Mainland China,2020-01-28 23:00:00,44,0,0,24.4752847,101.3431058,Yunnan,Yunnan,44,Chine
-Hainan,Mainland China,2020-01-28 23:00:00,43,1,0,19.5663947,109.949686,Hainan,Hainan,43,Chine
-Heilongjiang,Mainland China,2020-01-28 23:00:00,37,1,0,47.12164720000001,128.738231,Heilongjiang,Heilongjiang,37,Chine
-Liaoning,Mainland China,2020-01-28 23:00:00,36,0,0,41.9436543,122.5290376,Liaoning,Liaoning,36,Chine
-Shanxi,Mainland China,2020-01-28 23:00:00,27,0,0,37.2425649,111.8568586,Shanxi,Shanxi,27,Chine
-Tianjin,Mainland China,2020-01-28 23:00:00,25,0,0,39.3433574,117.3616476,Tianjin,Tianjin,25,Chine
-Gansu,Mainland China,2020-01-28 23:00:00,24,0,0,35.7518326,104.2861116,Gansu,Gansu,24,Chine
-Inner Mongolia,Mainland China,2020-01-28 23:00:00,16,0,0,43.37822,115.0594815,Inner Mongolia,Inner Mongolia,16,Chine
-Xinjiang,Mainland China,2020-01-28 23:00:00,13,0,0,42.5246357,87.5395855,Xinjiang,Xinjiang,13,Chine
-Ningxia,Mainland China,2020-01-28 23:00:00,12,0,0,37.198731,106.1580937,Ningxia,Ningxia,12,Chine
-Guizhou,Mainland China,2020-01-28 23:00:00,9,0,0,26.8429645,107.2902839,Guizhou,Guizhou,9,Chine
-Jilin,Mainland China,2020-01-28 23:00:00,9,0,0,43.1520105,126.4371385,Jilin,Jilin,9,Chine
-Hong Kong,Hong Kong,2020-01-28 23:00:00,8,0,0,22.3193039,114.1693611,Hong Kong,HK,8,Hong-Kong
-Taiwan,Taiwan,2020-01-28 23:00:00,8,0,0,23.69781,120.960515,Taiwan,TW,8,Taïwan
-Macau,Macau,2020-01-28 23:00:00,7,0,0,22.198745,113.543873,Macao,MO,7,Macao
-Qinghai,Mainland China,2020-01-28 23:00:00,6,0,0,35.744798,96.4077358,Qinghai,Qinghai,6,Chine
-Washington,US,2020-01-28 18:00:00,1,0,0,47.7510741,-120.7401385,Washington,WA,1,Etats-Unis
-Illinois,US,2020-01-28 23:00:00,1,0,0,40.6331249,-89.3985283,Illinois,IL,1,Etats-Unis
-California,US,2020-01-28 23:00:00,2,0,0,36.778261,-119.4179324,California,CA,2,Etats-Unis
-Arizona,US,2020-01-28 23:00:00,1,0,0,34.0489281,-111.0937311,Arizona,AZ,1,Etats-Unis
-,Japan,2020-01-28 23:00:00,7,0,1,36.204824,138.252924,Japan,JP,7,Japon
-,Thailand,2020-01-28 23:00:00,14,0,5,15.870032,100.992541,Thailand,TH,14,Thaïlande
-,South Korea,2020-01-28 23:00:00,4,0,0,35.907757,127.766922,South Korea,KR,4,Corée du Sud
-,Singapore,2020-01-28 23:00:00,7,0,0,1.352083,103.819836,Singapore,SG,7,Singapour
-,Vietnam,2020-01-28 23:00:00,2,0,0,14.058324,108.277199,Vietnam,VN,2,Vietnam
-,France,2020-01-28 23:00:00,4,0,0,46.227638,2.213749,France,FR,4,France
-,Nepal,2020-01-28 23:00:00,1,0,0,28.394857,84.12400799999999,Nepal,NP,1,Népal
-,Malaysia,2020-01-28 23:00:00,7,0,0,4.210484,101.975766,Malaysia,MY,7,Malaisie
-Ontario,Canada,2020-01-28 23:00:00,1,0,0,51.253775,-85.323214,Ontario,ON,1,Canada
-British Columbia,Canada,2020-01-28 23:00:00,1,0,0,53.7266683,-127.6476205,British Columbia,BC,1,Canada
-,Cambodia,2020-01-28 23:00:00,1,0,0,12.565679,104.990963,Cambodia,KH,1,Cambodge
-,Sri Lanka,2020-01-28 23:00:00,1,0,0,7.873053999999999,80.77179699999999,Sri Lanka,LK,1,Sri Lanka
-New South Wales,Australia,2020-01-28 23:00:00,4,0,0,-31.2532183,146.921099,New South Wales,NSW,4,Australie
-Victoria,Australia,2020-01-28 23:00:00,1,0,0,-37.4713077,144.7851531,Victoria,VIC,1,Australie
-Bavaria,Germany,2020-01-28 23:00:00,4,0,0,48.7904472,11.4978895,Bavaria,BY,4,Allemagne
+Hubei,Mainland China,2020-01-29 21:00:00,4586,162,90,30.7378118,112.2384017,Hubei,Hubei,4586,Chine
+Zhejiang,Mainland China,2020-01-29 21:00:00,428,0,4,29.1416432,119.7889248,Zhejiang,Zhejiang,428,Chine
+Guangdong,Mainland China,2020-01-29 21:00:00,311,0,6,23.3790333,113.7632828,Guangdong,Guangdong,311,Chine
+Henan,Mainland China,2020-01-29 21:00:00,278,2,2,34.2904302,113.3823545,Henan,Henan,278,Chine
+Hunan,Mainland China,2020-01-29 21:00:00,277,0,0,26.895816,112.623731,Dongfeng North Road,Dongfeng N Rd,277,Chine
+Anhui,Mainland China,2020-01-29 21:00:00,200,0,2,30.6006773,117.9249002,Anhui,Anhui,200,Chine
+Chongqing,Mainland China,2020-01-29 21:00:00,165,0,1,29.4315861,106.912251,Chongqing,Chongqing,165,Chine
+Jiangxi,Mainland China,2020-01-29 21:00:00,162,0,4,27.0874564,114.9042208,Jiangxi,Jiangxi,162,Chine
+Shandong,Mainland China,2020-01-29 21:00:00,145,0,1,35.8939566,117.9249002,Shandong,Shandong,145,Chine
+Sichuan,Mainland China,2020-01-29 21:00:00,142,1,1,30.26380319999999,102.8054753,Sichuan,Sichuan,142,Chine
+Jiangsu,Mainland China,2020-01-29 21:00:00,129,0,1,33.1401715,119.7889248,Jiangsu,Jiangsu,129,Chine
+Beijing,Mainland China,2020-01-29 21:00:00,111,1,4,39.90419989999999,116.4073963,Beijing,Beijing,111,Chine
+Shanghai,Mainland China,2020-01-29 21:00:00,101,1,5,31.237137,121.487881,111,111,101,Chine
+Fujian,Mainland China,2020-01-29 21:00:00,101,0,0,24.505977,118.126884,Xingshan Road,Xingshan Rd,101,Chine
+Guangxi,Mainland China,2020-01-29 21:00:00,78,0,2,23.7247599,108.8076195,Guangxi,Guangxi,78,Chine
+Hebei,Mainland China,2020-01-29 21:00:00,65,1,0,37.8956594,114.9042208,Hebei,Hebei,65,Chine
+Shaanxi,Mainland China,2020-01-29 21:00:00,56,0,0,34.265033,108.946197,Lianhu Qu,Lianhu Qu,56,Chine
+Yunnan,Mainland China,2020-01-29 21:00:00,55,0,0,24.4752847,101.3431058,Yunnan,Yunnan,55,Chine
+Hainan,Mainland China,2020-01-29 21:00:00,43,1,0,19.5663947,109.949686,Hainan,Hainan,43,Chine
+Heilongjiang,Mainland China,2020-01-29 21:00:00,43,1,0,47.12164720000001,128.738231,Heilongjiang,Heilongjiang,43,Chine
+Liaoning,Mainland China,2020-01-29 21:00:00,39,0,1,41.9436543,122.5290376,Liaoning,Liaoning,39,Chine
+Shanxi,Mainland China,2020-01-29 21:00:00,35,0,1,37.2425649,111.8568586,Shanxi,Shanxi,35,Chine
+Tianjin,Mainland China,2020-01-29 21:00:00,27,0,0,39.3433574,117.3616476,Tianjin,Tianjin,27,Chine
+Gansu,Mainland China,2020-01-29 21:00:00,26,0,0,35.7518326,104.2861116,Gansu,Gansu,26,Chine
+Inner Mongolia,Mainland China,2020-01-29 21:00:00,16,0,0,43.37822,115.0594815,Inner Mongolia,Inner Mongolia,16,Chine
+Jilin,Mainland China,2020-01-29 21:00:00,14,0,1,43.1520105,126.4371385,Jilin,Jilin,14,Chine
+Xinjiang,Mainland China,2020-01-29 21:00:00,14,0,0,42.5246357,87.5395855,Xinjiang,Xinjiang,14,Chine
+Guizhou,Mainland China,2020-01-29 21:00:00,12,0,1,26.8429645,107.2902839,Guizhou,Guizhou,12,Chine
+Ningxia,Mainland China,2020-01-29 21:00:00,12,0,0,37.198731,106.1580937,Ningxia,Ningxia,12,Chine
+Hong Kong,Hong Kong,2020-01-29 21:00:00,10,0,0,22.3193039,114.1693611,Hong Kong,HK,10,Hong-Kong
+Taiwan,Taiwan,2020-01-29 21:00:00,8,0,0,23.69781,120.960515,Taiwan,TW,8,Taïwan
+Macau,Macau,2020-01-29 21:00:00,7,0,0,22.198745,113.543873,Macao,MO,7,Macao
+Qinghai,Mainland China,2020-01-29 21:00:00,6,0,0,35.744798,96.4077358,Qinghai,Qinghai,6,Chine
+Tibet,Mainland China,2020-01-29 21:00:00,1,0,0,30.1533605,88.7878678,Tibet,Tibet,1,Chine
+Washington,US,2020-01-29 21:00:00,1,0,0,47.7510741,-120.7401385,Washington,WA,1,Etats-Unis
+Illinois,US,2020-01-29 21:00:00,1,0,0,40.6331249,-89.3985283,Illinois,IL,1,Etats-Unis
+California,US,2020-01-29 21:00:00,2,0,0,36.778261,-119.4179324,California,CA,2,Etats-Unis
+Arizona,US,2020-01-29 21:00:00,1,0,0,34.0489281,-111.0937311,Arizona,AZ,1,Etats-Unis
+,Japan,2020-01-29 21:00:00,11,0,1,36.204824,138.252924,Japan,JP,11,Japon
+,Thailand,2020-01-29 21:00:00,14,0,5,15.870032,100.992541,Thailand,TH,14,Thaïlande
+,South Korea,2020-01-29 21:00:00,4,0,0,35.907757,127.766922,South Korea,KR,4,Corée du Sud
+,Singapore,2020-01-29 21:00:00,10,0,0,1.352083,103.819836,Singapore,SG,10,Singapour
+,Vietnam,2020-01-29 21:00:00,2,0,0,14.058324,108.277199,Vietnam,VN,2,Vietnam
+,France,2020-01-29 21:00:00,5,0,0,46.227638,2.213749,France,FR,5,France
+,Nepal,2020-01-29 21:00:00,1,0,0,28.394857,84.12400799999999,Nepal,NP,1,Népal
+,Malaysia,2020-01-29 21:00:00,7,0,0,4.210484,101.975766,Malaysia,MY,7,Malaisie
+Ontario,Canada,2020-01-29 21:00:00,2,0,0,51.253775,-85.323214,Ontario,ON,2,Canada
+British Columbia,Canada,2020-01-29 21:00:00,1,0,0,53.7266683,-127.6476205,British Columbia,BC,1,Canada
+,Cambodia,2020-01-29 21:00:00,1,0,0,12.565679,104.990963,Cambodia,KH,1,Cambodge
+,Sri Lanka,2020-01-29 21:00:00,1,0,0,7.873053999999999,80.77179699999999,Sri Lanka,LK,1,Sri Lanka
+New South Wales,Australia,2020-01-29 21:00:00,4,0,0,-31.2532183,146.921099,New South Wales,NSW,4,Australie
+Victoria,Australia,2020-01-29 21:00:00,2,0,0,-37.4713077,144.7851531,Victoria,VIC,2,Australie
+Queensland,Australia,2020-01-29 21:00:00,1,0,0,-20.9175738,142.7027956,Queensland,QLD,1,Australie
+Bavaria,Germany,2020-01-29 21:00:00,4,0,0,48.7904472,11.4978895,Bavaria,BY,4,Allemagne
+,Finland,2020-01-29 21:00:00,1,0,0,61.92410999999999,25.7481511,Finland,FI,1,Finlande
+,United Arab Emirates,2020-01-29 21:00:00,4,0,0,23.424076,53.847818,United Arab Emirates,AE,4,Emirats Arabes Unis
