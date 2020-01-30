@@ -11,7 +11,7 @@
 
 	queue()
 	.defer(d3.json, "data/world_countries.json")
-	.defer(d3.csv, "data/geocoded.csv?8")
+	.defer(d3.csv, "data/geocoded.csv?10")
 	.await(ready);
 
 	function ready(err, geodata, data) {
@@ -61,7 +61,7 @@
 			// Legend: from Bubblemap Template by Yan Holtz
 			// https://www.d3-graph-gallery.com/graph/bubble_legend.html
 			// https://www.d3-graph-gallery.com/graph/bubblemap_template.html
-			var valuesToShow = [1, 200, 1000, 3500]
+			var valuesToShow = [1, 200, 1000, 4500]
 			var xCircle = 80
 			var xLabel = xCircle + 100;
 			var yCircle = height / 2;
@@ -98,7 +98,7 @@
 			  .append("text")
 			    .attr('x', xLabel)
 			    .attr('y', function(d){ return yCircle - size(d) } )
-			    .text( function(d){ return d == 3500 ? d + ' cas' : d } )
+			    .text( function(d){ return d == 4500 ? d + ' cas' : d } )
 			    .style("font-size", 12)
 			    .attr('alignment-baseline', 'middle')
 

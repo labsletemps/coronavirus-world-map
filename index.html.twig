@@ -25,7 +25,7 @@
 			<div class="offset-md-2 col-md-8 col-sm-12">
 				<h1 class="intro">L’expansion du nouveau coronavirus</h1>
 
-				<p class="lead">Le 2019-nCov a causé 132 décès et plus de 6000 infections confirmées dans le monde, selon les chiffres compilés par l’université Johns-Hopkins. Il dépasse désormais le nombre de cas enregistré lors de l'épidémie de Sras (Syndrome respiratoire aigu sévère) en 2002-2003</p>
+				<p class="lead">Le 2019-nCov a causé 170 décès et plus de 7000 infections confirmées dans le monde, selon les chiffres compilés dans la nuit de mercredi à jeudi par l’université Johns-Hopkins. Il dépasse désormais le nombre de cas enregistré lors de l'épidémie de Sras (Syndrome respiratoire aigu sévère) en 2002-2003</p>
 
 				</div>
 			</div>
@@ -46,7 +46,7 @@
 					<div class="col-lg-12">
 						<div class="source">
 							Sources: compilation du <a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">CSSE de l’Université Johns-Hopkins</a>,
-							mise à jour le 29 janvier à 5h00 (heure suisse) et basée sur des données
+							mise à jour le <span class="dataUpdate">30 janvier à 3h00 (heure suisse)</span> et basée sur des données
 							de <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports">l’OMS</a>,
 							du <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC</a>,
 							de la <a href="http://www.nhc.gov.cn/yjb/s3578/new_list.shtml">NHC</a>
@@ -76,11 +76,11 @@
 					<div class="offset-md-2 col-md-8 col-sm-12">
 
 
-									<p><span class="big">6057</span> infections confirmées dans le monde</p>
-									<p><span class="big">132</span> décès</p>
-									<p><span class="big">110</span> guérisons</p>
+									<p><span class="big">7783</span> infections confirmées dans le monde</p>
+									<p><span class="big">170</span> décès</p>
+									<p><span class="big">133</span> guérisons</p>
 
-									<p>D’après des données <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">compilées par l’université John Hopkins</a> et actualisées le 29 janvier à 5h00 (heure suisse).</p>
+									<p>D’après des données <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">compilées par l’université John Hopkins</a> et actualisées le <span class="dataUpdate">30 janvier à 3h00 (heure suisse)</span>.</p>
 
 									<!-- <p class="credits">Infographie: Paul Ronga + TODO code dipso sur github</p> -->
 
@@ -106,12 +106,12 @@
 		<script src="lib/d3-tip.js"></script>
 		<script src="lib/queue.min.js"></script>
 		<script src="js/chart-custom.js?12"></script>
-		<script src="js/map.js?10"></script>
+		<script src="js/map.js?13"></script>
 		<script>
 
 		$(document).ready(function() {
 			// time-serie charts
-			d3.csv("data/linegraphs.csv?4", function(e, data){
+			d3.csv("data/linegraphs.csv?5", function(e, data){
 				var china = [];
 				var other = [];
 
